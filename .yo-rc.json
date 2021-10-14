@@ -1,0 +1,16 @@
+{
+  "@anansi/generator-js": {
+    "githubOrg": "ntucker",
+    "rootPath": "src",
+    "assetPath": "dist",
+    "appName": "minimal",
+    "githubDomain": "github.com",
+    "testing": false,
+    "features": [],
+    "badges": "",
+    "spa": true,
+    "webpack": true,
+    "reactMode": "legacy",
+    "style": "sass"
+  }
+}

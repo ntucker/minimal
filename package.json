@@ -1,0 +1,60 @@
+{
+  "name": "minimal",
+  "version": "0.0.1",
+  "description": "minimal - An Anansi project",
+  "scripts": {
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "npm run lint --fix",
+    "test:type": "tsc",
+    "start": "webpack serve --mode=development",
+    "start:prod": "serve dist",
+    "build": "webpack --mode=production",
+    "build:analyze": "webpack --mode=production --env analyze",
+    "build:profile": "webpack --mode=production --env profile",
+    "test:pkg": "webpack --env check=nobuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ntucker/minimal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ntucker/minimal/issues"
+  },
+  "homepage": "https://github.com/ntucker/minimal#readme",
+  "keywords": [
+    "anansi"
+  ],
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "private": true,
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "@babel/core": "7.15.8",
+    "@anansi/babel-preset": "2.7.16",
+    "@anansi/eslint-plugin": "0.11.28",
+    "@anansi/browserslist-config": "1.3.3",
+    "typescript": "4.4.4",
+    "react-test-renderer": "17.0.2",
+    "react-refresh": "0.10.0",
+    "serve": "12.0.1",
+    "@types/react": "17.0.30",
+    "@types/react-dom": "17.0.9",
+    "@rest-hooks/test": "7.1.2",
+    "webpack-cli": "4.9.0",
+    "webpack-dev-server": "4.3.1",
+    "webpack": "5.58.2",
+    "@anansi/webpack-config": "9.1.1"
+  },
+  "dependencies": {
+    "rest-hooks": "6.1.3",
+    "@rest-hooks/rest": "3.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}
